@@ -1,0 +1,67 @@
+import { mode } from '@chakra-ui/theme-tools'
+import typography from './typography'
+import colors from './colors'
+import badge from './badge'
+import button from './button'
+import tooltip from './tooltip'
+import input from './input'
+import numberInput from './numberinput'
+import select from './select'
+import { extendTheme } from '@chakra-ui/react'
+
+const overrides = {
+	config: {
+		useSystemColorMode: false,
+		initialColorMode: 'dark',
+	},
+	styles: {
+		global: props => ({
+			html: {
+				scrollbarWidth: 'none',
+			},
+			body: {
+				fontFamily: 'Body',
+				fontSize: '1em',
+				fontWeight: '300',
+				bg: mode('#ffffff', '#110D02')(props),
+			},
+			'html::-webkit-scrollbar': {
+				display: 'none',
+			},
+			'button:focus': {
+				boxShadow: '0 0 0 3px rgba(206, 150, 0, 0.6)!important',
+			},
+			'input::placeholder': {
+				color: '#000',
+			},
+		}),
+	},
+	textStyles: typography,
+	colors: colors,
+	components: {
+		Button: button,
+		Input: input,
+		NumberInput: numberInput,
+		Badge: badge,
+		Tooltip: tooltip,
+		Select: select,
+	},
+	layerStyles: {
+		overview: {
+			bg: 'black',
+			border: '1px solid #ffc300ce',
+			borderRadius: '19px',
+			marginBottom: '15px',
+			p: '19px',
+			minHeight: '95px',
+			boxShadow: '0px 0px 32px -20px #ffffff9c',
+		},
+		actionPanel: {
+			display: 'flex',
+			width: '100%',
+			justifyContent: 'center',
+		},
+	},
+}
+
+export default extendTheme(overrides)

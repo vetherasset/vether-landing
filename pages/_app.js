@@ -1,7 +1,21 @@
-import '../styles/globals.css'
+import React from 'react'
+import PropTypes from 'prop-types'
+import { ChakraProvider } from '@chakra-ui/react'
+import theme from '../themes/vether'
+import '../styles.css'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+const Gate = ({ Component, pageProps }) => {
+
+	Gate.propTypes = {
+		Component: PropTypes.any,
+		pageProps: PropTypes.any,
+	}
+
+	return (
+		<ChakraProvider theme={theme}>
+			<Component {...pageProps} />
+		</ChakraProvider>
+	)
 }
 
-export default MyApp
+export default Gate
