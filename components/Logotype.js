@@ -9,7 +9,7 @@ export const Logotype = (props) => {
 	return (
 		<Box {...props}>
 			<Link href='/'>
-				<a>
+				<a style={{ display: 'block' }}>
 					<Image
 						width='146.31px'
 						height='54px'

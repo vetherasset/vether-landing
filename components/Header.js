@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Spacer, Button } from '@chakra-ui/react'
+import { Flex, Button } from '@chakra-ui/react'
 
 import { Logotype } from './Logotype'
 
@@ -12,36 +12,17 @@ export const Header = (props) => {
 	}
 
 	return (
-		<Flex {...props}>
-			<Flex w="33%">
-				<Logotype margin='3px 8px 0'/>
+		<Flex {...props} maxWidth='75rem' m='1.5rem auto 0 auto'>
+			<Flex w='50%'>
+				<Logotype margin='0 8px 0'/>
 			</Flex>
-			<Spacer />
-			<Flex w="33%"
-				justifyContent='space-between'
-				alignItems='flex-end'
+			<Flex w='50%'
+				justifyContent='end'
+				alignItems='center'
 			>
 				<Button
 					{...style}
-					variant='ghost'
-				>
-					Media
-				</Button>
-				<Button
-					{...style}
-					variant='ghost'
-				>
-					Community
-				</Button>
-				<Button
-					{...style}
-					variant='ghost'
-				>
-					Whitepaper
-				</Button>
-				<Button
-					{...style}
-					variant='outline'
+					variant='solid'
 				>
 					Open Dapp
 				</Button>
