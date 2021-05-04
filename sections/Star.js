@@ -2,7 +2,7 @@ import React from 'react'
 import { Flex, Heading } from '@chakra-ui/react'
 import Image from 'next/image'
 
-export const Dragon = (props) => {
+export const Star = (props) => {
 
 	const style = {
 		w: '50%',
@@ -18,16 +18,15 @@ export const Dragon = (props) => {
 				<Image
 					width='487px'
 					height='486px'
-					src='/assets/svg/dragon.svg'
+					src='/assets/svg/star.svg'
 				/>
 			</Flex>
 			<Flex {...style}>
 				<Heading as='h1' size='xl'>
-					Stock to Flow
+					Foundation for a decentralized ecosystem
 				</Heading>
-				<Heading as='h2' size='md' fontWeight='normal' textAlign='justify'>
-				 Vether has properties of strict scarcity, unforgeable costliness and a <i>fixed emission schedule</i>.
-				 There will only be <b>1,000,000</b> Veth ever.
+				<Heading as='h2' size='md' fontWeight='normal'>
+					Vether is built to be the foundation for a larger decentralized ecosystem.
 				</Heading>
 			</Flex>
 		</Flex>
