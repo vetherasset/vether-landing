@@ -1,7 +1,17 @@
 import React from 'react'
 import { Flex, Heading, Box, Button } from '@chakra-ui/react'
+import { useRouter } from 'next/router'
+import defaults from '../common/defaults'
 
 export const Hero = (props) => {
+
+	const router = useRouter()
+
+	const startDapp = (e) => {
+		e.preventDefault()
+		router.push(defaults.urlDapp)
+	}
+
 
 	const style = {
 		w: '50%',
@@ -17,13 +27,15 @@ export const Hero = (props) => {
 					A strictly-scarce, decentralized, and fairly distributed Ethereum based asset
 				</Heading>
 				<Box as='h2' size='md' fontWeight='normal' textAlign='justify'>
-				That stores value created by dreamers and builders. With limited supply and&nbsp;with technical properties that allow for even fairer distribution and&nbsp;transparent costs.
+				An asset that stores value created by dreamers and builders. With limited supply and with technical properties that allow for even fairer distribution and transparent costs.
 				</Box>
 				<Button
-					width='130px'
+					size='lg'
+					maxWidth='156px'
 					variant='outline'
+					onClick={startDapp}
 				>
-					Acquire
+					Acquire now
 				</Button>
 			</Flex>
 			<Flex {...style}>

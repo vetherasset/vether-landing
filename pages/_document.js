@@ -22,6 +22,9 @@ class MyDocument extends Document {
 					<link rel="preload" href="fonts/lato-v17-latin-700.woff2" as="font" crossOrigin="anonymous" />
 					<link rel="preload" href="fonts/lato-v17-latin-700italic.woff2" as="font" crossOrigin="anonymous" />
 					<Global styles={`
+						html {
+							background: #000;
+						}
 						@font-face {
 							font-family: 'Heading';
 							font-style: normal;

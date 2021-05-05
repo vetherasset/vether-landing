@@ -1,14 +1,24 @@
 import React from 'react'
-import { Flex, Button } from '@chakra-ui/react'
-
+import { Flex, Box, Button } from '@chakra-ui/react'
 import { Logotype } from './Logotype'
+import { useRouter } from 'next/router'
+import defaults from '../common/defaults'
 
 export const Header = (props) => {
 
+	const router = useRouter()
+
+	const startDapp = (e) => {
+  	e.preventDefault()
+		router.push(defaults.urlDapp)
+	}
+
 	const style = {
-		size: 'md',
+		size: 'lg',
+		fontSize: '1rem',
 		minWidth: 'initial',
-		fontSize: { base: '0.65rem', sm: 'sm' },
+		variant: 'solid',
+		float: 'right',
 	}
 
 	return (
@@ -16,17 +26,17 @@ export const Header = (props) => {
 			<Flex w='50%'>
 				<Logotype margin='0 8px 0'/>
 			</Flex>
-			<Flex w='50%'
+			<Box w='50%'
 				justifyContent='end'
 				alignItems='center'
 			>
 				<Button
 					{...style}
-					variant='solid'
+					onClick={startDapp}
 				>
-					Open Dapp
+					Launch Dapp
 				</Button>
-			</Flex>
+			</Box>
 		</Flex>
 	)
 }

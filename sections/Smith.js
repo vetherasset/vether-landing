@@ -18,7 +18,7 @@ export const Smith = (props) => {
 					Fairly distributed
 				</Heading>
 				<Box size='md' fontWeight='normal' textAlign='justify'>
-				 An impartially divided share is distributed daily. <i>No pre-mine. No pre-sale. Full transparency.</i> Every Veth in the world was paid for by Ethereum. And you can see how much.
+				 An impartially divided share is distributed daily. <i>No&nbsp;pre-mine.&nbsp;No&nbsp;pre-sale.&nbsp;Full transparency.</i> Every Veth in the world was paid for by Ethereum. And you can see how much.
 				 Either&nbsp;burn Ether for Vether or buy it on the open market.
 				</Box>
 			</Flex>
