@@ -8,7 +8,7 @@ export const Footer = (props) => {
 			<Flex {...props}>
 				<Grid
 					width='100%'
-					maxWidth='70rem'
+					maxWidth='65rem'
 					m='0 auto'
 					templateRows={{ base: 'repeat(2, 1fr)', sm: 'repeat(1, 1fr)' }}
 					templateColumns={{ base: 'repeat(3, 1fr)', sm: 'repeat(7, 1fr)' }}
