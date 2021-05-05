@@ -1,4 +1,5 @@
 import { mode } from '@chakra-ui/theme-tools'
+import fonts from './fonts'
 import typography from './typography'
 import colors from './colors'
 import badge from './badge'
@@ -20,7 +21,6 @@ const overrides = {
 	styles: {
 		global: props => ({
 			body: {
-				fontFamily: 'Body',
 				fontSize: '1em',
 				fontWeight: '300',
 				color: 'white',
@@ -36,6 +36,7 @@ const overrides = {
 				width: '30vw',
 			},
 			h1: {
+				textTransform: 'uppercase',
 				margin: '0 0 1rem',
 			},
 			h2: {
@@ -49,6 +50,7 @@ const overrides = {
 			},
 		}),
 	},
+	fonts: fonts,
 	textStyles: typography,
 	colors: colors,
 	components: {

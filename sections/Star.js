@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Heading } from '@chakra-ui/react'
+import { Flex, Heading, Box } from '@chakra-ui/react'
 import Image from 'next/image'
 
 export const Star = (props) => {
@@ -23,11 +23,13 @@ export const Star = (props) => {
 			</Flex>
 			<Flex {...style}>
 				<Heading as='h1' size='xl'>
-					Foundation for a decentralized ecosystem
+					Ethereum-based
 				</Heading>
-				<Heading as='h2' size='md' fontWeight='normal'>
-					Vether is built to be the foundation for a larger decentralized ecosystem.
-				</Heading>
+				<Box size='md' fontWeight='normal' textAlign='justify'>
+				Native to Ethereum, the more Vether’s worth, the scarcer Ethereum becomes. They’re naturally symbiotic.
+				If&nbsp;Ethereum is the invisible backbone of a decentralized world, then Vether is the container of Ethereum’s creative value.
+				The&nbsp;more sustained value that’s created on it, the&nbsp;more it’s worth.
+				</Box>
 			</Flex>
 		</Flex>
 	)

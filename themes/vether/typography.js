@@ -1,24 +1,14 @@
 export default {
-	body: {
-		fontFamily: 'Body',
-	},
 	h1: {
-		margin: '2rem 0',
+		margin: '0 0 1rem',
 	},
 	h2: {
-		margin: '0.7rem 0',
-	},
-	h2lg: {
-		margin: '2rem 0',
+		margin: '0 0 1.5rem',
 	},
 	h3: {
-		margin: '1rem 0',
+		margin: '0 0 1rem',
 	},
 	h4: {
-		margin: '0.5rem 0',
-	},
-	h5: {
-	},
-	h6: {
+		margin: '0 0 0.5rem',
 	},
 }

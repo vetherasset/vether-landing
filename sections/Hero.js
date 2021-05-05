@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Heading, Button } from '@chakra-ui/react'
+import { Flex, Heading, Box, Button } from '@chakra-ui/react'
 import Image from 'next/image'
 
 export const Hero = (props) => {
@@ -15,16 +15,16 @@ export const Hero = (props) => {
 		<Flex {...props}>
 			<Flex {...style}>
 				<Heading as='h1' size='xl'>
-					A strictly-scarce<br/>Ethereum-based asset
+					A strictly-scarce, decentralized, and fairly distributed Ethereum based asset
 				</Heading>
-				<Heading as='h2' size='md' fontWeight='normal'>
-					With limited supply and with technical properties that allow for even fairer distribution and transparent costs.
-				</Heading>
+				<Box as='h2' size='md' fontWeight='normal'>
+				That stores value created by dreamers and builders. With limited supply and with technical properties that allow for even fairer distribution and transparent costs.
+				</Box>
 				<Button
 					width='130px'
 					variant='outline'
 				>
-					{'Acquire'}
+					Acquire
 				</Button>
 			</Flex>
 			<Flex {...style}>

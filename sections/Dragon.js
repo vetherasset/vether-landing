@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Heading } from '@chakra-ui/react'
+import { Flex, Heading, Box } from '@chakra-ui/react'
 import Image from 'next/image'
 
 export const Dragon = (props) => {
@@ -23,12 +23,11 @@ export const Dragon = (props) => {
 			</Flex>
 			<Flex {...style}>
 				<Heading as='h1' size='xl'>
-					Stock to Flow
+				Strictly-scarce
 				</Heading>
-				<Heading as='h2' size='md' fontWeight='normal' textAlign='justify'>
-				 Vether has properties of strict scarcity, unforgeable costliness and a <i>fixed emission schedule</i>.
-				 There will only be <b>1,000,000</b> Veth ever.
-				</Heading>
+				<Box size='md' fontWeight='normal' textAlign='justify'>
+				 You can’t just find it anywhere. It’s rare. Think limited edition, <i>21x rarer than Bitcoin</i>.
+				 There will only be <b>1,000,000</b>&nbsp;Veth ever.</Box>
 			</Flex>
 		</Flex>
 	)

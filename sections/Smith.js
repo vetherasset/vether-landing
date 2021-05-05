@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Heading } from '@chakra-ui/react'
+import { Flex, Heading, Box } from '@chakra-ui/react'
 import Image from 'next/image'
 
 export const Smith = (props) => {
@@ -16,11 +16,12 @@ export const Smith = (props) => {
 		<Flex {...props}>
 			<Flex {...style}>
 				<Heading as='h1' size='xl'>
-					A strictly-scarce Ethereum-based asset
+					Fairly distributed
 				</Heading>
-				<Heading as='h2' size='md' fontWeight='normal'>
-					Store of Value with a novel approach to proving value.
-				</Heading>
+				<Box size='md' fontWeight='normal' textAlign='justify'>
+				 An impartially divided share is distributed daily. <i>No pre-mine. No pre-sale. Full transparency.</i> Every Veth in the world was paid for by Ethereum. And you can see how much.
+				 Either&nbsp;burn Ether for Vether or buy it on the open market.
+				</Box>
 			</Flex>
 			<Flex {...style}>
 				<Image

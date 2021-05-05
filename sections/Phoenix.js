@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Heading } from '@chakra-ui/react'
+import { Flex, Heading, Box } from '@chakra-ui/react'
 import Image from 'next/image'
 
 export const Phoenix = (props) => {
@@ -16,13 +16,12 @@ export const Phoenix = (props) => {
 		<Flex {...props}>
 			<Flex {...style}>
 				<Heading as='h1' size='xl'>
-					Proof of Value
+					Decentralized
 				</Heading>
-				<Heading as='h2' size='md' fontWeight='normal' textAlign='justify'>
-					Participants compete to purchase it by burning capital on-chain. As a result, all units of Vether are acquired at-cost.
-					There was no pre-mine and anyone with Ethereum can take part in the burning process to “mine” more Veth.
-					This&nbsp;mechanism is called Proof-of-Value.
-				</Heading>
+				<Box size='md' fontWeight='normal' textAlign='justify'>
+					No one can control it and there’s no blacklist. Every day a portion gets released to whoever burns Ether for it.
+					This&nbsp;mechanism is called <b>Proof-of-Value</b>.
+				</Box>
 			</Flex>
 			<Flex {...style}>
 				<Image
