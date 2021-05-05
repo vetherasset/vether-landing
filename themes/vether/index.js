@@ -48,6 +48,12 @@ const overrides = {
 			h4: {
 				margin: '0 0 0.5rem',
 			},
+			'img[src=\'\']': {
+				opacity: '0',
+			},
+			'img:not([src])': {
+				opacity: '0',
+			},
 		}),
 	},
 	fonts: fonts,

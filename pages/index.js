@@ -11,8 +11,8 @@ import { Smith } from '../sections/Smith'
 const Home = () => {
 	return (
 		<>
-			<Header p='1.2rem 1rem'/>
-			<Box maxWidth='75rem' margin='0 auto' padding='0 1.5rem'>
+			<Header p={{ base: '1.2rem 1rem', md: '1.2rem 1.5rem' }}/>
+			<Box maxWidth='75rem' m='0 auto' p={{ base: '0 1.25rem', md: '0 2.5rem' }}>
 				<Hero/>
 				<Dragon/>
 				<Phoenix/>

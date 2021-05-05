@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Grid, Box, Heading, GridItem } from '@chakra-ui/react'
+import { Flex, Grid, Heading, GridItem } from '@chakra-ui/react'
 
 export const Footer = (props) => {
 
@@ -17,8 +17,8 @@ export const Footer = (props) => {
 					width='100%'
 					maxWidth='70rem'
 					m='0 auto'
-					templateRows='repeat(1, 1fr)'
-					templateColumns='repeat(7, 1fr)'
+					templateRows={{ base: 'repeat(2, 1fr)', md: 'repeat(1, 1fr)' }}
+					templateColumns={{ base: 'repeat(3, 1fr)', md: 'repeat(7, 1fr)' }}
 					gap='5'
 				>
 					<GridItem colSpan={1}>
@@ -43,7 +43,7 @@ export const Footer = (props) => {
 							<li><a href='#'>Etherscan</a></li>
 						</ul>
 					</GridItem>
-					<GridItem colSpan={4} textAlign='right'>
+					<GridItem colSpan={{ base: '3', md: '4' }} textAlign='right'>
 						<Heading as='h3' size='sm'>Community</Heading>
 						<ul style={{ listStyleType: 'none' }}>
 							<li><a href='#'>Discord</a></li>
