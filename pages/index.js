@@ -30,7 +30,7 @@ const Home = () => {
 				height='auto'
 				flexDirection='column'
 				m='0 auto'
-				p='10rem 1.5rem'
+				p={{ base: '5.5rem 1.5rem', md: '10rem 1.5rem' }}
 			/>
 		</>
 	)

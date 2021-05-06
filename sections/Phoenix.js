@@ -4,8 +4,8 @@ import { Flex, Heading, Box } from '@chakra-ui/react'
 export const Phoenix = (props) => {
 
 	const style = {
-		w: '50%',
-		minH: '615px',
+		w: { base: '100%', md: '50%' },
+		minH: { base: '300px', md: '615px' },
 		padding: { base: '0', md: '0 1.5rem', lg: '0 5rem' },
 		flexFlow: 'column',
 		justifyContent: 'center',
@@ -13,7 +13,7 @@ export const Phoenix = (props) => {
 
 	return (
 		<Flex {...props}>
-			<Flex {...style}>
+			<Flex {...style} paddingRight={{ base: '1.3rem', md: '' }}>
 				<Heading as='h1' size='xl'>
 					Decentralized
 				</Heading>
@@ -22,7 +22,7 @@ export const Phoenix = (props) => {
 					This&nbsp;mechanism is called <b>Proof-of-Value</b>.
 				</Box>
 			</Flex>
-			<Flex {...style}>
+			<Flex {...style} maxW={{ base: '27%', md: '100%' }}>
 				<img
 					width='487px'
 					height='486px'
