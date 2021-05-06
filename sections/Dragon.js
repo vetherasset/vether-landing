@@ -5,7 +5,7 @@ export const Dragon = (props) => {
 
 	const style = {
 		w: { base: '100%', md: '50%' },
-		minH: { base: '300px', md: '615px' },
+		minH: { base: '365px', md: '615px' },
 		padding: { base: '0', md: '0 1.5rem', lg: '0 5rem' },
 		flexFlow: 'column',
 		justifyContent: 'center',

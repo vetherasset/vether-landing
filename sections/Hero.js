@@ -14,7 +14,7 @@ export const Hero = (props) => {
 
 	const style = {
 		w: { base: '100%', md: '50%' },
-		minH: { base: '460px', md: '615px' },
+		minH: { base: '360px', md: '615px' },
 		flexFlow: 'column',
 		justifyContent: 'center',
 	}
