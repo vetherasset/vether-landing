@@ -35,5 +35,26 @@ export default {
 				bg: 'transparent',
 			},
 		}),
+		link: () => ({
+			color: '#fff',
+			height: 'auto',
+    	padding: '0',
+			_active: {
+				color: '#fff',
+				opacity: '0.6',
+			},
+		}),
+		linkAccent: () => ({
+			color: 'accent',
+			height: 'auto',
+    	padding: '0',
+			_hover: {
+				textDecoration: 'underline',
+			},
+			_active: {
+				color: 'accent',
+				opacity: '0.6',
+			},
+		}),
 	},
 }

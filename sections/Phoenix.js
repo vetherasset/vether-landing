@@ -1,7 +1,17 @@
 import React from 'react'
-import { Flex, Heading, Box } from '@chakra-ui/react'
+import { Flex, Heading, Box, Button } from '@chakra-ui/react'
+import { ArrowForwardIcon } from '@chakra-ui/icons'
+import { useRouter } from 'next/router'
+import defaults from '../common/defaults'
 
 export const Phoenix = (props) => {
+
+	const router = useRouter()
+
+	const push = (e, href) => {
+  	e.preventDefault()
+		router.push(href)
+	}
 
 	const style = {
 		w: { base: '100%', md: '50%' },
@@ -18,8 +28,18 @@ export const Phoenix = (props) => {
 					Decentralized
 				</Heading>
 				<Box size='md' fontWeight='normal' textAlign='justify'>
-					No one can control it and there’s no blacklist. Every day a&nbsp;portion gets released to whoever burns Ether for it.
-					This&nbsp;mechanism is called <b>Proof-of-Value</b>.
+					<Box as='p' textStyle='p'>
+						No one can control it and there’s no blacklist. Every day a&nbsp;portion gets released to whoever burns Ether for it.
+						This&nbsp;mechanism is called <b>Proof-of-Value</b>.
+					</Box>
+					<Button
+				 		size='lg'
+						variant='linkAccent'
+						rightIcon={<ArrowForwardIcon />}
+						onClick={(e) => push(e, defaults.url.dapp)}
+					>
+					Acquire
+					</Button>
 				</Box>
 			</Flex>
 			<Flex {...style} maxW={{ base: '27%', md: '100%' }}>

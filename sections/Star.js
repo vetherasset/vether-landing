@@ -1,7 +1,17 @@
 import React from 'react'
-import { Flex, Heading, Box } from '@chakra-ui/react'
+import { Flex, Heading, Box, Button } from '@chakra-ui/react'
+import { ArrowForwardIcon } from '@chakra-ui/icons'
+import { useRouter } from 'next/router'
+import defaults from '../common/defaults'
 
 export const Star = (props) => {
+
+	const router = useRouter()
+
+	const push = (e, href) => {
+  	e.preventDefault()
+		router.push(href)
+	}
 
 	const style = {
 		w: { base: '100%', md: '50%' },
@@ -25,9 +35,19 @@ export const Star = (props) => {
 					Ethereum-based
 				</Heading>
 				<Box size='md' fontWeight='normal' textAlign='justify'>
-				Native to Ethereum, the more Vether’s worth, the scarcer Ethereum becomes. They’re naturally symbiotic.
-				If&nbsp;Ethereum is the invisible backbone of a decentralized world, then Vether is the container of Ethereum’s creative value.
-				The&nbsp;more sustained value that’s created on it, the&nbsp;more it’s worth.
+					<Box as='p' textStyle='p'>
+						Native to Ethereum, the more Vether’s worth, the scarcer Ethereum becomes. They’re naturally symbiotic.
+						If&nbsp;Ethereum is the invisible backbone of a decentralized world, then Vether is the container of Ethereum’s creative value.
+						The&nbsp;more sustained value that’s created on it, the&nbsp;more it’s worth.
+					</Box>
+					<Button
+						size='lg'
+						variant='linkAccent'
+						rightIcon={<ArrowForwardIcon />}
+						onClick={(e) => push(e, defaults.url.dapp)}
+					>
+						Acquire
+					</Button>
 				</Box>
 			</Flex>
 		</Flex>

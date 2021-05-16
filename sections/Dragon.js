@@ -1,7 +1,17 @@
 import React from 'react'
-import { Flex, Heading, Box } from '@chakra-ui/react'
+import { Flex, Heading, Box, Button } from '@chakra-ui/react'
+import { ArrowForwardIcon } from '@chakra-ui/icons'
+import { useRouter } from 'next/router'
+import defaults from '../common/defaults'
 
 export const Dragon = (props) => {
+
+	const router = useRouter()
+
+	const push = (e, href) => {
+  	e.preventDefault()
+		router.push(href)
+	}
 
 	const style = {
 		w: { base: '100%', md: '50%' },
@@ -25,8 +35,19 @@ export const Dragon = (props) => {
 				Strictly-scarce
 				</Heading>
 				<Box size='md' fontWeight='normal' textAlign='justify'>
-				 You can’t just find it anywhere. It’s rare. Think limited edition, <i>21x rarer than Bitcoin</i>.
-				 There will only be <b>1,000,000</b>&nbsp;Veth ever.</Box>
+				 <Box as='p' textStyle='p'>
+					 You can’t just find it anywhere. It’s rare. Think limited edition, <i>21x rarer than Bitcoin</i>.
+				 There will only be <b>1,000,000</b>&nbsp;Veth ever.
+				 </Box>
+				 <Button
+				 		size='lg'
+						variant='linkAccent'
+						rightIcon={<ArrowForwardIcon />}
+						onClick={(e) => push(e, defaults.url.dapp)}
+					>
+					Acquire
+					</Button>
+				 </Box>
 			</Flex>
 		</Flex>
 	)

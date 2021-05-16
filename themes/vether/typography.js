@@ -1,4 +1,10 @@
 export default {
+	noLigs: {
+		fontVariantLigatures: 'none',
+	},
+	p: {
+		marginBottom: '2.3rem',
+	},
 	h1: {
 		margin: '0 0 1rem',
 	},

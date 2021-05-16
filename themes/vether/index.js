@@ -22,7 +22,7 @@ const overrides = {
 		global: props => ({
 			body: {
 				fontSize: '1em',
-				fontWeight: '300',
+				fontWeight: 'normal',
 				color: 'white',
 				bg: mode('#000000', '#000000')(props),
 			},

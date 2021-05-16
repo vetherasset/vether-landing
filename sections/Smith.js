@@ -1,7 +1,17 @@
 import React from 'react'
-import { Flex, Heading, Box } from '@chakra-ui/react'
+import { Flex, Heading, Box, Button } from '@chakra-ui/react'
+import { ArrowForwardIcon } from '@chakra-ui/icons'
+import { useRouter } from 'next/router'
+import defaults from '../common/defaults'
 
 export const Smith = (props) => {
+
+	const router = useRouter()
+
+	const push = (e, href) => {
+  	e.preventDefault()
+		router.push(href)
+	}
 
 	const style = {
 		w: { base: '100%', md: '50%' },
@@ -18,8 +28,18 @@ export const Smith = (props) => {
 					Fairly distributed
 				</Heading>
 				<Box size='md' fontWeight='normal' textAlign='justify'>
-				 An impartially divided share is distributed daily. <i>No&nbsp;pre-mine.&nbsp;No&nbsp;pre-sale.&nbsp;Full transparency.</i> Every Veth in the world was paid for by Ethereum. And you can see how much.
-				 Either&nbsp;burn Ether for Vether or buy it on the open market.
+					<Box as='p' textStyle='p'>
+						An impartially divided share is distributed daily. <i>No&nbsp;pre-mine.&nbsp;No&nbsp;pre-sale.&nbsp;Full transparency.</i> Every Veth in the world was paid for by Ethereum. And you can see how much.
+						Either&nbsp;burn Ether for Vether or buy it on the open market.
+					</Box>
+				 <Button
+				 		size='lg'
+						variant='linkAccent'
+						rightIcon={<ArrowForwardIcon />}
+						onClick={(e) => push(e, defaults.url.dapp)}
+					>
+					Acquire
+					</Button>
 				</Box>
 			</Flex>
 			<Flex {...style} maxW={{ base: '27%', md: '100%' }}>

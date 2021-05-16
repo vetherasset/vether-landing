@@ -9,7 +9,7 @@ export const Hero = (props) => {
 
 	const startDapp = (e) => {
 		e.preventDefault()
-		router.push(defaults.urlDapp)
+		router.push(defaults.url.dapp)
 	}
 
 	const style = {
