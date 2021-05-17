@@ -122,9 +122,9 @@ const EmissionTable = () => {
 						<Box as='p'>|-----|--------|-------|-------|-----------|</Box>
 						<Box as='p'>| &nbsp;&nbsp;1 | &nbsp;&nbsp;&nbsp;244 | &nbsp;&nbsp;244 | &nbsp;&nbsp;0.7 | &nbsp;&nbsp;&nbsp;&nbsp;2,048 |</Box>
 						<Box as='p'>| &nbsp;&nbsp;2 | &nbsp;&nbsp;&nbsp;244 | &nbsp;&nbsp;488 | &nbsp;&nbsp;1.3 | &nbsp;&nbsp;&nbsp;&nbsp;1,024 | </Box>
-						<Box as='p'>| &nbsp;&nbsp;3 | &nbsp;&nbsp;&nbsp;244 | &nbsp;&nbsp;732 | &nbsp;&nbsp;2.0 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;514 | </Box>
+						<Box as='p'>| &nbsp;&nbsp;3 | &nbsp;&nbsp;&nbsp;244 | &nbsp;&nbsp;732 | &nbsp;&nbsp;2.0 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;512 | </Box>
 						<Box as='p'>| &nbsp;&nbsp;4 | &nbsp;&nbsp;&nbsp;244 | &nbsp;&nbsp;976 | &nbsp;&nbsp;2.6 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;256 | </Box>
-						<Box as='p'>| &nbsp;&nbsp;5 | &nbsp;&nbsp;&nbsp;244 | &nbsp;1420 | &nbsp;&nbsp;3.3 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;148 |</Box>
+						<Box as='p'>| &nbsp;&nbsp;5 | &nbsp;&nbsp;&nbsp;244 | &nbsp;1420 | &nbsp;&nbsp;3.3 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;128 |</Box>
 						<Box as='p'>| &nbsp;&nbsp;6 | &nbsp;&nbsp;&nbsp;244 | &nbsp;1464 | &nbsp;&nbsp;3.9 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;64 | </Box>
 						<Box as='p'>| &nbsp;&nbsp;7 | &nbsp;&nbsp;&nbsp;244 | &nbsp;1708 | &nbsp;&nbsp;4.6 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;32 | </Box>
 						<Box as='p'>| &nbsp;&nbsp;8 | &nbsp;&nbsp;&nbsp;244 | &nbsp;1952 | &nbsp;&nbsp;5.2 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16 | </Box>
