@@ -16,7 +16,7 @@ const Gate = ({ Component, pageProps }) => {
 		<ChakraProvider theme={theme}>
 			<Header/>
 			<Component {...pageProps} />
-			<hr style={{ width: '100%', maxWidth: '60rem', height: '1px', margin: '0 auto', borderColor: '#ffdc7342' }}/>
+			<hr style={{ width: '100%', maxWidth: '60rem', height: '1px', margin: '0 auto', opacity: '0.6', backgroundImage: 'linear-gradient(90deg,#ff65ac  0%, #FFBF00 100%)', border: 'none' }}/>
 			<Footer/>
 		</ChakraProvider>
 	)

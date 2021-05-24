@@ -9,27 +9,36 @@ export default {
 	},
 	variants: {
 		solid: () => ({
-			color: 'rgb(17, 13, 1)',
-			bg: '#ffbf00',
+			color: '#000',
+			transition: '0.7s',
+			backgroundSize: '150% auto',
+			backgroundImage: 'linear-gradient(90deg,#ff65ac  0%, #FFBF00 100%)',
 			_hover: {
-				bg: '#fcc41c',
+				backgroundSize: '150% auto',
+				backgroundPosition: 'right center',
+				backgroundImage: 'linear-gradient(90deg,#ff65ac  0%, #FFBF00 100%)',
 			},
 			_active: {
-				bg: '#ffcf40',
+				backgroundSize: '150% auto',
+				backgroundPosition: 'right center',
+				backgroundImage: 'linear-gradient(90deg,#f573af  0%, #ffc300 100%)',
 			},
 			_disabled: {
 				bg: 'transparent',
 			},
 		}),
 		outline: () => ({
-			color: '#ffbf00',
-			borderColor: '#ffbf00',
+			color: 'accent',
+			border: 'none',
+			backgroundSize: '150% auto',
+			backgroundImage: 'linear-gradient(90deg,#ff65ac  0%, #FFBF00 100%)',
+			p: '1px',
 			_hover: {
-				color: 'rgb(17, 13, 1)',
-				bg: '#ffbf00',
+				backgroundSize: '150% auto',
+				backgroundPosition: 'right center',
+				backgroundImage: 'linear-gradient(90deg,#ff65ac  0%, #FFBF00 100%)',
 			},
 			_active: {
-				bg: '#ffcf40',
 			},
 			_disabled: {
 				bg: 'transparent',
