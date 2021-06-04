@@ -44,7 +44,8 @@ export const Header = (props) => {
 			<Flex w='50%'>
 				<Logotype margin='0 8px 0'/>
 			</Flex>
-			<Flex w='50%' last
+			<Flex w='50%'
+				last='true'
 				justifyContent='flex-end'
 				alignItems='center'
 				flexFlow='row'
