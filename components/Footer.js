@@ -33,7 +33,6 @@ export const Footer = (props) => {
 						<Heading as='h3' size='sm'>Resources</Heading>
 						<ul style={{ listStyleType: 'none' }}>
 							<li><Link onClick={(e) => push(e, defaults.url.dapp)}>Launch Dapp</Link></li>
-							<li><Link isExternal href={defaults.url.analytics}>Analytics</Link></li>
 							<li><Link isExternal href={defaults.url.docs}>Docs</Link></li>
 							<li><Link onClick={(e) => push(e, 'whitepaper')}>Whitepaper</Link></li>
 						</ul>
