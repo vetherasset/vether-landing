@@ -72,16 +72,6 @@ export const Header = (props) => {
 						>
 					Docs
 						</Button>
-						<Button
-							size={size}
-							variant='link'
-							lineHeight='normal'
-							onClick={() => open(defaults.url.analytics)}
-							{...link}
-							{...style}
-						>
-					Analytics
-						</Button>
 					</>,
 				})}
 				<Button
